@@ -1,0 +1,47 @@
+[
+    {
+        "id": "EGK24KR0FL9",
+        "title": "coocking with love",
+        "categories": [
+            "coock"
+        ],
+        "isForChildren": false,
+        "date": [
+            1519211809934
+        ],
+        "duration": 30, //in minutes
+        "reviews": [
+            {
+                "id": "makeId",
+                "txt": "Very helpful hosts. Cooked traditional...",
+                "rate": 4,
+                "by": {
+                    "_id": "u102",
+                    "fullName": "yonit tsairi",
+                    "imgUrl": "/img/img2.jpg"
+                }
+            }
+        ],
+        "rateCount": 1005,
+        "rating": 4.6,
+        "host": {
+            "id": "DNUIEDYH3748",
+            "fullName": "chen shoshana",
+            "imgUrl": "imgUrl"
+        },
+        "joinedUsers": [
+            {
+                "id": "FDMNC8783",
+                "fullName": "dina K",
+                "imgUrl": "imgUrl"
+            },
+            {
+                "id": "FDMN435t83",
+                "fullName": "yonit tsairi",
+                "imgUrl": "imgUrl"
+            }
+        ],
+        "maxCapacity": 50,
+        "isFullBooked": false
+    }
+]
