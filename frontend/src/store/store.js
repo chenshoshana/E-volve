@@ -2,7 +2,7 @@ import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 
 
-import { eventiReducer } from './reducers/eventiReducer.js';
+import { eventiReducer } from './reducer/eventiReducer.js';
 
 const rootReducer = combineReducers({
     eventiModule: eventiReducer

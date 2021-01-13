@@ -1,4 +1,4 @@
-import { EventiPreview } from "./EventiPreview.jsx"
+import { EventiPreview } from "../cmps/EventiPreview.jsx"
 
 export function EventiList(eventis) {
     return <article className="eventi-container">

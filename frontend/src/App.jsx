@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
 import { AppHeader } from './cmps/AppHeader.jsx'
+import { Home } from './pages/Home.jsx'
 import { About } from './pages/About.jsx'
 import { Login } from './pages/Login.jsx'
 import { Signup } from './pages/Signup.jsx'
@@ -12,22 +14,23 @@ import { EventiDetails } from './pages/EventiDetails.jsx'
 import { EventiEdit } from './pages/EventiEdit.jsx'
 
 
+
 export class App extends Component {
     render() {
         return (
             <section>
                 <AppHeader />
                 <Switch>
-                    <Route component={EventiEdit} path="/eventi/edit/:eventiId?" />
-                    <Route component={EventiDetails} path="/eventi/:eventiId" />
+                    {/* <Route component={EventiEdit} path="/eventi/edit/:eventiId?" /> */}
+                    {/* <Route component={EventiDetails} path="/eventi/:eventiId" /> */}
                     <Route component={EventiList} path="/eventi/list" />
-                    <Route component={EventiApp} path="/eventi" />
-                    <Route component={ChatApp} path="/chat" />
-                    <Route component={HostDetails} path="/profile/host/userId:" />
-                    <Route component={UserDetails} path="/profile/user/userId:" />
-                    <Route component={Signup} path="/signup" />
-                    <Route component={Login} path="/login" />
-                    <Route component={About} path="/about" />
+                    {/* <Route component={EventiApp} path="/eventi" /> */}
+                    {/* <Route component={ChatApp} path="/chat" /> */}
+                    {/* <Route component={HostDetails} path="/profile/host/userId:" /> */}
+                    {/* <Route component={UserDetails} path="/profile/user/userId:" /> */}
+                    {/* <Route component={Signup} path="/signup" /> */}
+                    {/* <Route component={Login} path="/login" /> */}
+                    {/* <Route component={About} path="/about" /> */}
                     <Route component={Home} path="/" />
                 </Switch>
             </section>

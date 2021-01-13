@@ -6,6 +6,6 @@ export function Home() {
                 <h1>I'm living it!</h1>
             </div>
         </section>
-        >
+        
     )
 }
