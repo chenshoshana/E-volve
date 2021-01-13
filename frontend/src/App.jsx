@@ -12,6 +12,7 @@ import { EventiApp } from './pages/EventiApp.jsx'
 import { EventiList } from './pages/EventiList.jsx'
 import { EventiDetails } from './pages/EventiDetails.jsx'
 import { EventiEdit } from './pages/EventiEdit.jsx'
+import { AppFooter } from './cmps/AppFooter.jsx'
 
 
 
@@ -33,6 +34,7 @@ export class App extends Component {
                     {/* <Route component={About} path="/about" /> */}
                     <Route component={Home} path="/" />
                 </Switch>
+                <AppFooter />
             </section>
         )
     }
