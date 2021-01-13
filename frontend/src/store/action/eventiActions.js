@@ -1,4 +1,4 @@
-import { eventiService } from "../../services/eventiService"
+import { eventiService } from "../../service/eventiService.js"
 
 export function loadEventis(filterBy) {
     return (dispatch) => {

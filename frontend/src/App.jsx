@@ -25,7 +25,7 @@ export class App extends Component {
                     {/* <Route component={EventiEdit} path="/eventi/edit/:eventiId?" /> */}
                     {/* <Route component={EventiDetails} path="/eventi/:eventiId" /> */}
                     <Route component={EventiList} path="/eventi/list" />
-                    {/* <Route component={EventiApp} path="/eventi" /> */}
+                    <Route component={EventiApp} path="/eventi" />
                     {/* <Route component={ChatApp} path="/chat" /> */}
                     {/* <Route component={HostDetails} path="/profile/host/userId:" /> */}
                     {/* <Route component={UserDetails} path="/profile/user/userId:" /> */}

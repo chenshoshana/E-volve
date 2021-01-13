@@ -1,18 +1,25 @@
-import { connect } from 'react-redux';
-import React, { Component } from 'react'
+import React from 'react';
 
-export class EventiPreview extends Component {
-    render() {
-        return (
-            <div>
-                <img></img>
-                <div>
-                    <i></i>
-                    <h3>Title</h3>
-                </div>
-
-            </div>
-        )
-    }
+export function EventiPreview({eventi}) {
+    const { title, price, imgUrls, host, reviews, cycles, members } = eventi
+    // let total = 0
+    // const rating = reviews.forEach(review => {
+    //     total += review.rating;
+    // });
+    
+    return (
+        <div>
+            {/* <img src={imgUrls[0]}></img> */}
+            <div>{title}</div>
+            <div>{price}</div>
+            <div>{host.fullname}</div>
+            {/* <div>{cycles[0].members.length}/{cycles[0].capacity}</div>
+            <div>{reviews.length}</div>
+            <div>{total / reviews.length}</div> */}
+        </div>
+    
+    );
 }
+
+
 

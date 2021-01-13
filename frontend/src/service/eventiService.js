@@ -1,5 +1,5 @@
 
-export const toyService = {
+export const eventiService = {
     query
 }
 

@@ -11,7 +11,7 @@ export function AppHeader() {
                         <ul className="header-list flex justify-center">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
-                            <li><Link to="/event">Events</Link></li>
+                            <li><Link to="/eventi">Events</Link></li>
                         </ul>
 
                 </nav>

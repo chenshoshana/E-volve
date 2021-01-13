@@ -1,7 +1,7 @@
 
 import { connect } from 'react-redux'
 
-export function _AppFooter() {
+export function AppFooter() {
 
     return (
         <section>
@@ -21,4 +21,4 @@ export function _AppFooter() {
 }
 
 
-export const AppFooter = connect(mapStateToProps)(_AppFooter);
+// export const AppFooter = connect(mapStateToProps)(_AppFooter);
