@@ -5,7 +5,7 @@ export function loadEventies() { // Action Creator
         return eventiService.query()
             .then(eventis => {
                 const action = {
-                    type: 'SET_EVENTIES',
+                    type: 'SET_EVENTI',
                     eventis
                 }
                 dispatch(action)
