@@ -1,8 +1,8 @@
 [
     {
         "_id": "u101",
-        "fullName": "Orly Amdadi",
-        "userName": "orly@amdadi.com",
+        "fullname": "Orly Amdadi",
+        "username": "orly@amdadi.com",
         "password": "tinkerbell",
         "isHost": true,
         "hostedEvents": [
@@ -14,11 +14,13 @@
         "joinedEvents": [
             {
                 "id": "EGK245FJKI",
-                "name": "soccer Lover"
+                "title": "soccer Lover",
+                "date": 121124547878
             },
             {
                 "id": "EGK2354HDKJL",
-                "name": "How to JS"
+                "title": "How to JS",
+                "date": 121124547878
             }
         ],
         "imgUrl": "http://some-img"

@@ -1,47 +1,55 @@
 [
     {
-        "id": "EGK24KR0FL9",
-        "title": "coocking with love",
+        "_id": "EGK24KR0FL9",
+        "title": "yoga",
+        "price": 20,
+        "description": "nbdssjadkhjkdfshjkdsfa",
         "categories": [
-            "coock"
+            "SPORT"
         ],
-        "isForChildren": false,
-        "date": [
-            1519211809934
-        ],
-        "duration": 30, //in minutes
-        "reviews": [
-            {
-                "id": "makeId",
-                "txt": "Very helpful hosts. Cooked traditional...",
-                "rate": 4,
-                "by": {
-                    "_id": "u102",
-                    "fullName": "yonit tsairi",
-                    "imgUrl": "/img/img2.jpg"
-                }
-            }
-        ],
-        "rateCount": 1005,
-        "rating": 4.6,
+        "eventLink": "dskjhfdsjkhf.com",
+        "isForChildern": false,
+        "media": {
+            "imgUrls": [],
+            "videoUrls": []
+        },
         "host": {
             "id": "DNUIEDYH3748",
             "fullName": "chen shoshana",
             "imgUrl": "imgUrl"
         },
-        "joinedUsers": [
+        "sessions": [
             {
-                "id": "FDMNC8783",
-                "fullName": "dina K",
-                "imgUrl": "imgUrl"
-            },
-            {
-                "id": "FDMN435t83",
-                "fullName": "yonit tsairi",
-                "imgUrl": "imgUrl"
+                "id": "makeId()",
+                "dateOfEvent": 1519211809934,
+                "maxCapacity": 50,
+                "joinedUsers": [
+                    {
+                        "id": "FDMNC8783",
+                        "fullName": "dina K",
+                        "imgUrl": "imgUrl"
+                    },
+                    {
+                        "id": "FDMN435t83",
+                        "fullName": "yonit tsairi",
+                        "imgUrl": "imgUrl"
+                    }
+                ]
             }
         ],
-        "maxCapacity": 50,
-        "isFullBooked": false
+        "duration": 30,
+        "reviews": [
+            {
+                "id": "makeId()",
+                "txt": "Very helpful hosts. Cooked traditional...",
+                "date": 1519211809934,
+                "rate": 4,
+                "byUser": {
+                    "_id": "u102",
+                    "fullName": "yonit tsairi",
+                    "imgUrl": "/img/img2.jpg"
+                }
+            }
+        ]
     }
 ]
