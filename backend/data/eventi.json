@@ -4,49 +4,49 @@
         "title": "yoga",
         "price": 20,
         "description": "nbdssjadkhjkdfshjkdsfa",
-        "categories": [
-            "SPORT"
+        "tags": [
+            "sport",
+            "children"
         ],
-        "eventLink": "dskjhfdsjkhf.com",
-        "isForChildern": false,
+        "eventLink": "zoom.com",
         "media": {
             "imgUrls": [],
             "videoUrls": []
         },
         "host": {
-            "id": "DNUIEDYH3748",
-            "fullName": "chen shoshana",
+            "_id": "DNUIEDYH3748",
+            "fullname": "chen shoshana",
             "imgUrl": "imgUrl"
         },
-        "sessions": [
+        "cycles": [
             {
                 "id": "makeId()",
-                "dateOfEvent": 1519211809934,
-                "maxCapacity": 50,
-                "joinedUsers": [
+                "startsAt": 1519211809934,
+                "capacity": 50,
+                "members": [
                     {
-                        "id": "FDMNC8783",
-                        "fullName": "dina K",
+                        "_id": "FDMNC8783",
+                        "fullname": "dina K",
                         "imgUrl": "imgUrl"
                     },
                     {
-                        "id": "FDMN435t83",
-                        "fullName": "yonit tsairi",
+                        "_id": "FDMN435t83",
+                        "fullname": "yonit tsairi",
                         "imgUrl": "imgUrl"
                     }
                 ]
             }
         ],
-        "duration": 30,
+        "durationMinutes": 30,
         "reviews": [
             {
                 "id": "makeId()",
                 "txt": "Very helpful hosts. Cooked traditional...",
-                "date": 1519211809934,
+                "createdAt": 1519211809934,
                 "rate": 4,
                 "byUser": {
                     "_id": "u102",
-                    "fullName": "yonit tsairi",
+                    "fullname": "yonit tsairi",
                     "imgUrl": "/img/img2.jpg"
                 }
             }
