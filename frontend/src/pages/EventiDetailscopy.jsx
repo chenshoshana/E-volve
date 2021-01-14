@@ -60,7 +60,7 @@ export function HostFeaturPost(props) {
                         </Link>
             </div>
 
-        </Paper>
+        </Paper >
     );
 }
 export function ReviewsFeaturPost(props) {
@@ -82,7 +82,7 @@ export function ReviewsFeaturPost(props) {
 
             </div>
 
-        </Paper>
+        </Paper >
     );
 }
 export function CyclesCard({ cycle }) {
@@ -104,19 +104,19 @@ export function CyclesCard({ cycle }) {
         </Card>
     );
 }
-// export function DatePickers() {
-//     return (
-//         <form className="container noValidate">
-//             <TextField
-//                 id="date"
-//                 label="Birthday"
-//                 type="date"
-//                 defaultValue="2017-05-24"
-//                 className="textField"
-//                 InputLabelProps={{
-//                     shrink: true
-//                 }}
-//             />
-//         </form>
-//     );
-// }
+{/* export function DatePickers() {
+    return (
+        <form className="container noValidate">
+            <TextField
+                id="date"
+                label="Birthday"
+                type="date"
+                defaultValue="2017-05-24"
+                className="textField"
+                InputLabelProps={{
+                    shrink: true
+                }}
+            />
+        </form>
+    );
+} */}
