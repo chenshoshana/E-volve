@@ -11,11 +11,9 @@
 @import "basics/links";
 @import "basics/forms";
 
-
-
-
 // Components
 @import "cmps/Header";
+@import "cmps/EventiPreview";
+@import "cmps/EventiList";
+@import "cmps/EventiEdit";
 @import "cmps/ReviewList";
-
-
