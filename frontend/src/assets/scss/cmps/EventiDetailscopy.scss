@@ -1,0 +1,55 @@
+.eventiFeaturedPost {
+    position: relative;
+    background-color: white;
+    color: white;
+    margin-bottom: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+}
+.eventiFeaturedPostContent {
+    position: relative;
+    padding: 3px;
+}
+//**************************************************************
+.hostFeaturedPost {
+    position: relative;
+    background-color: white;
+    color: white;
+    margin-bottom: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hostFeaturedPostContent {
+    position: relative;
+    padding: 3px;
+}
+//*************************************************************
+.reviewsFeaturedPost {
+    position: relative;
+    background-color: white;
+    color: white;
+    margin-bottom: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reviewsFeaturedPostContent {
+    position: relative;
+    padding: 3px;
+}
+.rev-img{
+width: 50px;
+border-radius: 50%;
+}
