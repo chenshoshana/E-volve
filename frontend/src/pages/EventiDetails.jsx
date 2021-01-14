@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { eventiService } from '../service/eventiService.js'
 // import { eventiReview } from './eventiReview'
 // import { removeEventi } from '../store/actions/eventiActions.js'
-import { EventiFeaturPost, HostFeaturPost, ReviewsFeaturPost } from './EventiDetailscopy.jsx'
+import { EventiFeaturPost, HostFeaturPost, ReviewsFeaturPost, CyclesCard, DatePickers } from './EventiDetailscopy.jsx'
 
 
 export class EventiDetails extends Component {
@@ -62,23 +62,10 @@ export class EventiDetails extends Component {
                             <HostFeaturPost eventi={eventi} />
                         </div>
                     </div>
-                    <div className="cycle-list">
-                        <div className="cycle-preview">
-                            <div className="left-side">
-                                <h1>cycles</h1>
-                                <h3>{eventi.cycles[0].startsAt}</h3>
-                                <h3> <span>From {eventi.price}$</span> / person</h3>
-                                <h3>TICKETS</h3>
-                            </div>
-                            <div className="right-side">
-                                <h3>TICKETS LEFT</h3>
-                                <button>CHOOSE</button>
-                            </div>
-                            <button>MORE DETAILS</button>
-                        </div>
+                    <div>
+                        <CyclesCard eventi={eventi} />
+                        <DatePickers />
                     </div>
-                    {/* <img src={ eventi.imgUrl? eventi.imgUrl : `https://robohash.org/${eventi._id}?set=set3`} /> */}
-
                 </div>
                 {/* </div> */}
                 {/* <div className="details-btn">
