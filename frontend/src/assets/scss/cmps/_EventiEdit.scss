@@ -1,13 +1,19 @@
+.EventiEdit {
+    padding: 20px;
+    // background-color: rgb(216, 165, 165);
+    height: 100%;
+    justify-content: center;
+}
 .edit-box {
-    height: 50vh;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-content: center;
+    padding: 20px;
     align-items: center;
-    input {
+    input,
+    select {
         background-color: unset;
         border: none;
+        height: 40px;
         border-bottom: 2px solid black;
     }
     .uploader {
@@ -26,4 +32,8 @@
     .disabled {
         pointer-events: none;
     }
+}
+.cyclesBox {
+    min-width: 30%;
+    border: 1px solid limegreen;
 }
