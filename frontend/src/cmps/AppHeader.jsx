@@ -16,7 +16,6 @@ export function AppHeader() {
 
                 </nav>
             </header>
-            <h3>Welcome AppHeader</h3>
             {/* <h3>Welcome <Link to="/profile">{loggedInUser.username}</Link></h3> */}
         </section>
     )

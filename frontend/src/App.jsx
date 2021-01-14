@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { AppHeader } from './cmps/AppHeader.jsx'
 import { Home } from './pages/Home.jsx'
-// import { About } from './pages/About.jsx'
+import { About } from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import { Signup } from './pages/Signup.jsx'
 // import { UserDetails } from './pages/UserDetails.jsx'
@@ -30,9 +30,9 @@ export class App extends Component {
                     {/* <Route component={ChatApp} path="/chat" /> */}
                     {/* <Route component={HostDetails} path="/profile/host/userId:" /> */}
                     {/* <Route component={UserDetails} path="/profile/user/userId:" /> */}
+                    <Route component={About} path="/about" />
                     <Route component={Signup} path="/signup" />
                     <Route component={Login} path="/login" />
-                    {/* <Route component={About} path="/about" /> */}
                     <Route component={Home} path="/" />
                 </Switch>
                 <AppFooter />
