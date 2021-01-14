@@ -1,5 +1,5 @@
-import { Link, Router } from 'react-router-dom'
-import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
+// import { connect } from 'react-redux'
 
 export function AppHeader() {
 
@@ -8,11 +8,11 @@ export function AppHeader() {
             <header className="main-header">
                 <h1>E-volvi</h1>
                 <nav>
-                        <ul className="header-list flex justify-center">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/eventi">Events</Link></li>
-                        </ul>
+                    <ul className="header-list flex justify-center">
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/eventi">Events</Link></li>
+                    </ul>
 
                 </nav>
             </header>

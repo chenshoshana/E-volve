@@ -1,0 +1,29 @@
+.edit-box {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-content: center;
+    align-items: center;
+    input {
+        background-color: unset;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    .uploader {
+        cursor: pointer;
+        width: 230px;
+        height: 35px;
+        border-radius: 7px;
+        text-align: center;
+        line-height: 35px;
+    }
+    button:hover,
+    .uploader:hover {
+        background-color: $clr4;
+        transition: all 0.8s;
+    }
+    .disabled {
+        pointer-events: none;
+    }
+}
