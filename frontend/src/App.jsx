@@ -10,7 +10,7 @@ import { Signup } from './pages/Signup.jsx'
 // import { ChatApp } from './cmps/ChatApp.jsx'
 import { EventiApp } from './pages/EventiApp.jsx'
 import { EventiList } from './pages/EventiList.jsx'
-// import { EventiDetails } from './pages/EventiDetails.jsx'
+import { EventiDetails } from './pages/EventiDetails.jsx'
 import { EventiEdit } from './pages/EventiEdit.jsx'
 import { AppFooter } from './cmps/AppFooter.jsx'
 import './assets/scss/main.scss';
@@ -24,7 +24,7 @@ export class App extends Component {
                 <AppHeader />
                 <Switch>
                     <Route component={EventiEdit} path="/eventi/edit/:eventiId?" />
-                    {/* <Route component={EventiDetails} path="/eventi/:eventiId" /> */}
+                    <Route component={EventiDetails} path="/eventi/:eventiId" />
                     <Route component={EventiList} path="/eventi/list" />
                     <Route component={EventiApp} path="/eventi" />
                     {/* <Route component={ChatApp} path="/chat" /> */}

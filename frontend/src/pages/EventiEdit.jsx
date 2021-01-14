@@ -12,7 +12,7 @@ export class EventiEdit extends Component {
     loadEventi = async () => {
         const { EventiId } = this.props.match.params;
         if (EventiId) {
-            const toy = await eventiService.getById(eventi)
+            const eventi = await eventiService.getById(eventi)
             this.setState({ eventi })
         }
     }
@@ -24,8 +24,8 @@ export class EventiEdit extends Component {
 
         this.setState(prevState => {
             return {
-                toy: {
-                    ...prevState.toy,
+                eventi: {
+                    ...prevState.eventi,
                     [name]: value
                 }
             }
@@ -46,9 +46,8 @@ export class EventiEdit extends Component {
 
     onSaveEventi = async (ev) => {
         ev.preventDefault()
-        const { toy } = this.state
-        console.log('Eventi!!!!!!!', Eventi);
-        await this.props.saveEventi(toy)
+        const { eventi } = this.state
+        await this.props.saveEventi(eventi)
         this.props.history.push('/Eventi')
     }
     render() {

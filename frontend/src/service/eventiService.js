@@ -7,8 +7,8 @@ localStorage.setItem('eventies', gEventies)
 
 
 export const eventiService = {
-    query
-    // getById,
+    query,
+    getById
     // save,
     // remove
 }
@@ -17,11 +17,12 @@ export const eventiService = {
 function query() {
     return Promise.resolve(gEventies)
 }
-// function getById(eventiId) {
-//     const eventi = gEventis.find(eventi => eventi._id === eventiId)
-//     if (eventi) return Promise.resolve(eventi)
-//     else return Promise.reject('No eventi')
-// }
+function getById(eventiId) {
+    const eventi = gEventies.find(eventi => eventi._id === eventiId)
+    if (eventi) return Promise.resolve(eventi)
+    else return Promise.reject('No eventi')
+}
+
 // function remove(eventiId) {
 //     const idx = gEventis.findIndex(eventi => eventi._id === eventiId)
 //     if (idx >= 0) {
