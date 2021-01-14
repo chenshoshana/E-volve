@@ -31,7 +31,7 @@ export class App extends Component {
                     {/* <Route component={UserDetails} path="/profile/user/userId:" /> */}
                     {/* <Route component={Signup} path="/signup" /> */}
                     {/* <Route component={Login} path="/login" /> */}
-                    {/* <Route component={About} path="/about" /> */}
+                    <Route component={About} path="/about" />
                     <Route component={Home} path="/" />
                 </Switch>
                 <AppFooter />
