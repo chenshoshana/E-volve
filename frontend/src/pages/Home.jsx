@@ -8,10 +8,10 @@ export function Home() {
                 <ul>
                     <li>Baking</li>
                     <li>Cooking</li>
-                    <li>Art</li>
-                    <li>Sculpture</li>
+                    <li>Art-crafts</li>
                     <li>Sport</li>
-                    <li>DIY</li>
+                    <li>Music</li>
+                    <li>Dance</li>
                 </ul>
             </div>
                 <EventiApp />

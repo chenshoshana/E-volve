@@ -53,7 +53,6 @@ export class EventiDetails extends Component {
                         <div className="cycle-preview">
                             <div className="left-side">
                                 <h1>{eventi.title}</h1>
-                                <h1>chen</h1>
                                 <h3>TICKETS</h3>
                             </div>
                             <div className="right-side">

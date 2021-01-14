@@ -6,7 +6,7 @@ export function AppHeader() {
     return (
         <section>
             <header className="main-header">
-                <h1>E-volvi</h1>
+                <h1>E-volvy</h1>
                 <nav>
                     <ul className="header-list flex justify-center">
                         <li><Link to="/">Home</Link></li>
