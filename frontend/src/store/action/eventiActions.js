@@ -2,7 +2,7 @@ import { eventiService } from "../../service/eventiService.js"
 
 export function loadEventis(filterBy) {
     return (dispatch) => {
-        eventiService.query(filterBy).then(eventis => { dispatch({ type: 'SET_EVENTIS', eventis }) })
+        eventiService.query(filterBy).then(eventies => { dispatch({ type: 'SET_EVENTIES', eventies }) })
     }
 }
 
@@ -27,7 +27,7 @@ export function editEventi(eventi) {
     console.log("adding review action ", eventi);
     return (dispatch) => {
         console.log("adding review action ", eventi);
-        eventiService.editEventi(eventi)
+        eventiService.saveEventi(eventi)
             .then(() => { dispatch({ type: 'EDIT_EVENTI', eventi }) })
             .catch(err => {
                 alert('OOPs, try again');
@@ -38,7 +38,7 @@ export function editEventi(eventi) {
 export function addEventi(eventi) {
     console.log(eventi, 'actions');
     return (dispatch) => {
-        eventiService.addEventi(eventi).then((savedEventi) => { dispatch({ type: 'ADD_EVENTI', eventi: savedEventi }) })
+        eventiService.saveEventi(eventi).then((savedEventi) => { dispatch({ type: 'ADD_EVENTI', eventi: savedEventi }) })
     }
 }
 

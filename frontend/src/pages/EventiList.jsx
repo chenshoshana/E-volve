@@ -1,8 +1,8 @@
 import { EventiPreview } from "../cmps/EventiPreview.jsx"
 
-export function EventiList({ eventis }) {
+export function EventiList({ eventies }) {
     return <div className="EventiList">
-        {eventis.map(eventi => {
+        {eventies.map(eventi => {
             return <EventiPreview key={eventi._id} eventi={eventi} />
         })}
     </div>

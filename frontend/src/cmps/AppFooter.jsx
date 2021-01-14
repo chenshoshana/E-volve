@@ -6,7 +6,7 @@ export function AppFooter() {
     return (
         <section>
             <footer className="main-footer">
-                <img className="app-logo" src="../assets/imgs"></img>
+                <img className="app-logo" src="../assets/imgs" alt="hi"></img>
                 <h3>E-volvi</h3>
                 <nav>
                     <ul className="footer-list flex justify-center">
