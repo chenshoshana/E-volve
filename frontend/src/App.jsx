@@ -19,24 +19,23 @@ import './assets/scss/main.scss';
 
 export class App extends Component {
     render() {
-        return (
-            <section>
-                <AppHeader />
-                <Switch>
-                    <Route component={EventiEdit} path="/eventi/edit/:eventiId?" />
-                    <Route component={EventiDetails} path="/eventi/:eventiId" />
-                    <Route component={EventiList} path="/eventi/list" />
-                    <Route component={EventiApp} path="/eventi" />
-                    {/* <Route component={ChatApp} path="/chat" /> */}
-                    {/* <Route component={HostDetails} path="/profile/host/userId:" /> */}
-                    {/* <Route component={UserDetails} path="/profile/user/userId:" /> */}
-                    <Route component={About} path="/about" />
-                    <Route component={Signup} path="/signup" />
-                    <Route component={Login} path="/login" />
-                    <Route component={Home} path="/" />
-                </Switch>
-                <AppFooter />
-            </section>
+        return (<React.Fragment>
+            <AppHeader />
+            <Switch>
+                <Route component={EventiEdit} path="/edit/:eventiId?" />
+                <Route component={EventiDetails} path="/eventi/:eventiId" />
+                <Route component={EventiList} path="/list" />
+                <Route component={EventiApp} path="/eventi" />
+                {/* <Route component={ChatApp} path="/chat" /> */}
+                {/* <Route component={HostDetails} path="/profile/host/userId:" /> */}
+                {/* <Route component={UserDetails} path="/profile/user/userId:" /> */}
+                <Route component={About} path="/about" />
+                <Route component={Signup} path="/signup" />
+                <Route component={Login} path="/login" />
+                <Route component={Home} path="/" />
+            </Switch>
+            {/* <AppFooter /> */}
+        </React.Fragment>
         )
     }
 

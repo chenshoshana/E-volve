@@ -6,9 +6,9 @@ export function AppFooter() {
     return (
         <section>
             <footer className="main-footer">
-                <img className="app-logo" src="../assets/imgs"></img>
-                <h3>E-volvi</h3>
                 <nav>
+                    {/* <img className="app-logo" src="../assets/imgs"></img> */}
+                    <h3>E-volvy</h3>
                     <ul className="footer-list flex justify-center">
                         <li>facebook</li>
                         <li>instgram</li>

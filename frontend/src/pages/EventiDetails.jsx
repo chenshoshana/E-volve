@@ -65,9 +65,13 @@ export class EventiDetails extends Component {
                     <div className="cycle-list">
                         <div className="cycle-preview">
                             <div className="left-side">
+<<<<<<< HEAD
                                 <h1>cycles</h1>
                                 <h3>{eventi.cycles[0].startsAt}</h3>
                                 <h3> <span>From {eventi.price}$</span> / person</h3>
+=======
+                                <h1>{eventi.title}</h1>
+>>>>>>> 6c553af5b4d87142f1653aac728ba3c7ebb361ce
                                 <h3>TICKETS</h3>
                             </div>
                             <div className="right-side">

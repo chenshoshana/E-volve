@@ -1,7 +1,7 @@
 import { Component } from 'react'
-import {connect} from 'react-redux'
-import {EventiList} from './EventiList.jsx'
-import {loadEventis} from '../store/action/eventiActions.js'
+import { connect } from 'react-redux'
+import { EventiList } from './EventiList.jsx'
+import { loadEventis } from '../store/action/eventiActions.js'
 
 export class _EventiApp extends Component {
 
@@ -27,10 +27,10 @@ export class _EventiApp extends Component {
     // }
 
     render() {
-        const { eventis } = this.props
-          return (
+        const { eventies } = this.props
+        return (
             <section>
-                <EventiList eventis={eventis} />
+                <EventiList eventies={eventies} />
             </section>
         )
     }
@@ -38,8 +38,7 @@ export class _EventiApp extends Component {
 
 const mapStateToProps = state => {
     return {
-        eventis: state.eventiModule.eventis,
-
+        eventies: state.eventiModule.eventies,
     }
 }
 
