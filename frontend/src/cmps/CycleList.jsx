@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
+import { CyclesCard } from '../pages/EventiDetailscopy'
 
-export class CycleList extends Component {
-    render() {
-        const { cycles, title } = this.props
-        return (
-            <div>
-                <div>current {title} cycles:</div>
-                <ul>
-                    {cycles.map((cycle, idx) => {
-                        return <li key={idx}>{cycle.startsAt} <button>remove</button><button>edit</button></li>
-                    })}
-                </ul>
-            </div>
-        )
-    }
+export function CycleList({ cycles }) {
+    return cycles.map((cycle, idx) => {
+        return <CyclesCard key={idx} cycle={cycle} />
+    })
 }
+
+
+
+
+
+

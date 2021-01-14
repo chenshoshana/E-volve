@@ -1,0 +1,72 @@
+.eventi-details {
+    max-width: 800px;
+
+    .eventi-details-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    .eventiFeaturedPostContent {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+    .img-rec-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .img-detail-sq {
+        width: 350px;
+        margin-right: 10px;
+    }
+    .img-detail-rec {
+        width: 180px;
+    }
+}
+.border-right {
+    border-radius: 5px 0 0 5px;
+}
+.border-left {
+    border-radius: 0 5px 5px 0;
+}
+
+// **************************************************
+
+.cycle-list {
+    grid-row: 3/4;
+    grid-column: -2/-1;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 500px;
+    background-color: red;
+}
+span {
+    font-size: 25px;
+}
+.gallery {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery > * {
+    max-width: 50%;
+}
+.img-rec-container > * {
+    padding: 1px;
+}
+.review-preview {
+    grid-row: 0/-1;
+    grid-column: 1/-1;
+}
+.share-like {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+.main-details {
+    grid-row: 3/4;
+    grid-column: 1/-2;
+}
+//**************************************************

@@ -3,10 +3,6 @@ const fs = require('fs')
 var gEventies = require('../data/eventi.json')
 
 
-
-
-
-
 export const eventiService = {
     query,
     getById,
