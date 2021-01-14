@@ -17,7 +17,10 @@ export const eventiService = {
 
 function query() {
     var eventies = StorageService.load('eventies')
-    if (!eventies) return Promise.resolve(gEventies)
+    if (!eventies) {
+        StorageService.save('eventies', gEventies)
+        return Promise.resolve(gEventies)
+    }
     else return Promise.resolve(eventies)
 }
 function getById(eventiId) {
