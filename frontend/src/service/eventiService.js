@@ -3,10 +3,6 @@ const fs = require('fs')
 var gEventies = require('../data/eventi.json')
 
 
-
-
-
-
 export const eventiService = {
     query,
     getById,
@@ -18,10 +14,9 @@ export const eventiService = {
 function query() {
     var eventies = StorageService.load('eventies')
     if (!eventies) {
-        StorageService.save('eventies', gEventies) 
+        StorageService.save('eventies', gEventies)
         return Promise.resolve(gEventies)
-    }
-    else return Promise.resolve(eventies)
+    } else return Promise.resolve(eventies)
 }
 function getById(eventiId) {
     var gEventies = StorageService.load('eventies')

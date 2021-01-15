@@ -34,7 +34,7 @@ export class App extends Component {
                 <Route component={Login} path="/login" />
                 <Route component={Home} path="/" />
             </Switch>
-            {/* <AppFooter /> */}
+            <AppFooter />
         </React.Fragment>
         )
     }

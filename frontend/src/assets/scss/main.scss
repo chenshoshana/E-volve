@@ -12,11 +12,15 @@
 @import "basics/forms";
 
 // Components
-@import "cmps/Header";
-@import "cmps/EventiPreview";
-@import "cmps/EventiList";
-@import "cmps/EventiEdit";
-@import "cmps/ReviewList";
+@import "cmps/header";
+@import "cmps/footer";
+@import "cmps/eventi-preview";
+@import "cmps/eventi-list";
+@import "cmps/eventi-details";
+@import "cmps/eventi-detailscopy";
+@import "cmps/eventi-edit";
+@import "cmps/review-list";
 
 // Pages
-@import "cmps/about"
+@import "views/about";
+@import "views/home-page";

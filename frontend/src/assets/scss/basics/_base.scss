@@ -33,11 +33,10 @@ h6 {
     text-align: center;
 }
 
-section,
-main,
-footer {
-    padding: 5px;
-}
+// main,
+// footer {
+//     padding: 5px;
+// }
 
 img {
     width: 100%;
@@ -50,7 +49,14 @@ img {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
+
 a:hover {
     text-decoration: underline;
+}
+
+.main-layout {
+    max-width: 1470px;
+    margin: 0 auto;
 }
