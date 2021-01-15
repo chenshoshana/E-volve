@@ -16,7 +16,8 @@ function query() {
     if (!eventies) {
         StorageService.save('eventies', gEventies)
         return Promise.resolve(gEventies)
-    } else return Promise.resolve(eventies)
+    }
+    else return Promise.resolve(eventies)
 }
 function getById(eventiId) {
     var gEventies = StorageService.load('eventies')

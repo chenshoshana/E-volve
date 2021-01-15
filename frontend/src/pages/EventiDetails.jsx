@@ -4,7 +4,12 @@ import React, { Component } from 'react'
 import { eventiService } from '../service/eventiService.js'
 // import { eventiReview } from './eventiReview'
 // import { removeEventi } from '../store/actions/eventiActions.js'
-import { EventiFeaturPost, HostFeaturPost, ReviewsFeaturPost } from './EventiDetailscopy.jsx'
+import { CyclesCard, EventiFeaturPost, HostFeaturPost, ReviewsFeaturPost } from './EventiDetailscopy.jsx'
+import IconButton from '@material-ui/core/IconButton';
+import FavoriteBorderRounded from '@material-ui/icons/FavoriteBorderRounded';
+import Share from '@material-ui/icons/Share';
+import Box from '@material-ui/core/Box';
+import { CycleList } from './../cmps/CycleList';
 
 
 export class EventiDetails extends Component {
@@ -42,11 +47,18 @@ export class EventiDetails extends Component {
         const { eventi } = this.state;
         // const { loggedInUser } = this.props
         if (!eventi) return <h1>Loading...</h1>
-        return (
-            <section className="eventi-details main-layout">
-
-                <h4>like | share</h4>
-                <div className="media-details">
+        return (<section className="eventi-details main-layout">
+            <div className="eventi-details-grid">
+                < div className="share-like" >
+                    <Box px={2} pb={2} mt={-1}>
+                        <IconButton >
+                            <Share />
+                        </IconButton>
+                        <IconButton>
+                            <FavoriteBorderRounded />
+                        </IconButton>
+                    </Box></div >
+                <div className="gallery">
                     <img className="img-detail-sq border-right" src={eventi.media.imgUrls}></img>
                     <div className="img-rec-container">
                         <img className="img-detail-rec" src={eventi.media.imgUrls}></img>
@@ -56,27 +68,13 @@ export class EventiDetails extends Component {
                     <img className="img-detail-sq border-left" src={eventi.media.imgUrls}></img>
                 </div>
                 <div className="main-details">
-                    <div className="right-desc">
-                        <EventiFeaturPost eventi={eventi} />
-                        <div className="">
-                            <HostFeaturPost eventi={eventi} />
-                        </div>
-                    </div>
-                    <div className="cycle-list">
-                        <div className="cycle-preview">
-                            <div className="left-side">
-                                <h1>cycles</h1>
-                                <h3>{eventi.cycles[0].startsAt}</h3>
-                                <h3> <span>From {eventi.price}$</span> / person</h3>
-                                <h3>TICKETS</h3>
-                            </div>
-                            <div className="right-side">
-                                <h3>TICKETS LEFT</h3>
-                                <button>CHOOSE</button>
-                            </div>
-                            <button>MORE DETAILS</button>
-                        </div>
-                    </div>
+                    <EventiFeaturPost eventi={eventi} />
+                    <HostFeaturPost eventi={eventi} />
+                </div>
+                <div className="cycle-list">
+                    <button>MORE DETAILS</button>
+                    <CycleList cycles={eventi.cycles} />
+
                     {/* <img src={ eventi.imgUrl? eventi.imgUrl : `https://robohash.org/${eventi._id}?set=set3`} /> */}
 
                 </div>
@@ -85,10 +83,12 @@ export class EventiDetails extends Component {
           {loggedInUser.isAdmin && <button onClick={() => this.onRemove(eventi._id)} className="delete-btn">Delete</button>}
           {loggedInUser.isAdmin && <button className="edit-btn"><Link to={`/eventi/edit/${eventi._id}`}>Edit</Link></button>}
         </div>  */}
+
                 {/* {<EventiReview eventiId={this.props.match.params.eventiId}/> */}
-                <h1>Reviews</h1>
-                <ReviewsFeaturPost eventi={eventi} />
-            </section>
+                <div className="review-preview">
+                    <h1>Reviews</h1>
+                    <ReviewsFeaturPost eventi={eventi} /></div>
+            </div ></section >
         )
     }
 }
