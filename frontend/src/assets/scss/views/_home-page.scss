@@ -1,0 +1,16 @@
+.hero {
+    height: 550px;
+    background-color: $clr2;
+    display: flex;
+
+    .middle-holder {
+        color: rgb(252, 235, 252);
+        font-size: rem(24px);
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        margin: auto;
+    }
+}

@@ -47,7 +47,7 @@ export class EventiDetails extends Component {
         const { eventi } = this.state;
         // const { loggedInUser } = this.props
         if (!eventi) return <h1>Loading...</h1>
-        return (<section className="eventi-details">
+        return (<section className="eventi-details main-layout">
             <div className="eventi-details-grid">
                 < div className="share-like" >
                     <Box px={2} pb={2} mt={-1}>

@@ -1,8 +1,9 @@
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-top: rem(15px);
+    height: 83vh;
 
     p {
         text-align: center;
@@ -11,5 +12,6 @@
 
     span {
         font-weight: bold;
+        font-size: rem(18px);
     }
 }
