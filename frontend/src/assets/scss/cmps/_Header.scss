@@ -1,18 +1,48 @@
 .main-header {
     background-color: $clr2;
     justify-content: space-between;
-    
 
     .header-logo {
         font-size: rem(28px);
         color: $clr6;
-        margin-inline-start: 25px;
+        margin-inline-start: 20px;
+    }
 
+    .header-logo :hover {
+        text-decoration: none;
+    }
+
+    .login-btn {
+        width: rem(70px);
+        font-size: rem(15px);
+        background-color: $clr1;
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15px;
+        margin-inline-start: 75px;
+        padding-bottom: 2px ;
+        // background-color: $clr6;
+        // color: $clr2;
+    }
+
+    .signup-btn {
+        width: rem(70px);
+        font-size: rem(15px);
+        background-color: $clr1;
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15px;
+        margin-inline-start: 5px;
+        padding-bottom: 2px ;
+        // background-color: $clr6;
+        // color: $clr2;
     }
 
     .header-list {
         li {
-            margin-inline-end: 85px;
+            margin-inline-end: 52px;
         }
 
         a {
@@ -21,29 +51,6 @@
         }
     }
 
-    // .loggedin-user {
-    //     background-color: $clr1;
-    //     padding: 2px 8px;
-    //     border-radius: 1em;
-    //     align-self: flex-end;
-    //     color: whitesmoke;
-    //     span {
-    //         background-color: $clr2;
-    //         padding: 4px;
-    //         margin: 10px;
-    //         border-radius: 50%;
-    //     }
-    // }
-
-    // nav {
-    //     background-color: $clr4;
-    //     padding: 5px 0;
-    // }
-    // nav a:not(:first-child) {
-    //     border-top: 1px solid $clr1;
-    //     padding: 0 5px;
-    //     margin: 10px;
-    // }
     nav .active {
         color: $clr1;
     }

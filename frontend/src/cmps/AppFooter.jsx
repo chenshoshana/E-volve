@@ -5,7 +5,7 @@ export function AppFooter() {
 
     return (
         <section>
-            <footer className="main-footer main-layout flex justify-center ">
+            <footer className="main-footer flex justify-center ">
                 <nav>
                     {/* <img className="app-logo" src="../assets/imgs"></img> */}
                     <div className="footer-logo">E-volvy</div>

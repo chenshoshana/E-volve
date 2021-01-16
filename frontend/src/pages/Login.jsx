@@ -2,8 +2,8 @@ import React from 'react';
 import { Formik } from 'formik';
 
 const Login = () => (
-    <div>
-        <h1>Anywhere in your app!</h1>
+    <div className="login-page">
+        <h1>Welcome back!</h1>
         <Formik
             initialValues={{ email: '', password: '' }}
             validate={values => {

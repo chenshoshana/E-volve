@@ -3,7 +3,7 @@ import React from 'react';
 import { Formik, Field, Form } from 'formik';
 
 export const Signup = () => (
-    <div>
+    <div className="signup-page">
         <h1>Sign Up</h1>
         <Formik
             initialValues={{
