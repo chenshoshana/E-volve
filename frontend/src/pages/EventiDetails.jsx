@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { eventiService } from '../service/eventiService.js'
 // import { eventiReview } from './eventiReview'
 // import { removeEventi } from '../store/actions/eventiActions.js'
-import { CyclesCard, EventiFeaturPost, HostFeaturPost, ReviewsFeaturPost } from './EventiDetailscopy.jsx'
+import { CyclesCard, EventiFeaturPost, HostFeaturPost, ReviewsFeaturPost } from './EventiDetailsCmps.jsx'
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteBorderRounded from '@material-ui/icons/FavoriteBorderRounded';
 import Share from '@material-ui/icons/Share';
@@ -72,8 +72,8 @@ export class EventiDetails extends Component {
                     <HostFeaturPost eventi={eventi} />
                 </div>
                 <div className="cycle-list">
-                    <button>MORE DETAILS</button>
-                    <CycleList cycles={eventi.cycles} />
+                    <CycleList  cycles={eventi.cycles} eventi = {eventi} />
+                    <button>See more dates</button>
 
                     {/* <img src={ eventi.imgUrl? eventi.imgUrl : `https://robohash.org/${eventi._id}?set=set3`} /> */}
 

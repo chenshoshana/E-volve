@@ -85,20 +85,26 @@ export function ReviewsFeaturPost(props) {
         </Paper >
     );
 }
-export function CyclesCard({ cycle }) {
-
+export function CyclesCard( {cycle, eventi} ) {
+    const date = UtilService.dateFormatter(cycle.startsAt,1519211812311)
+    console.log(cycle.startsAt);
+    console.log(cycle.endsAt); 
+    console.log(cycle.price);
     return (
         <Card className={"root"}>
             <div className={"details"}>
                 <CardContent className={"content"}>
                     <Typography component="h5" variant="h5">
-                        {cycle.startsAt}
+                        <b>from {eventi.price} $</b> <span>/ person </span>
+                    </Typography>
+                    <Typography component="h5" variant="h5">
+                        {date}
                     </Typography>
                     <Typography variant="subtitle1" color="textSecondary">
                         {cycle.capacity - cycle.members.length}/ {cycle.capacity}
                     </Typography>
-                </CardContent>
                 <button>join</button>
+                </CardContent>
             </div>
 
         </Card>
