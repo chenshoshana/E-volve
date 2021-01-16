@@ -13,14 +13,18 @@
 
 // Components
 @import "cmps/Header";
-@import "cmps/EventiPreview";
-@import "cmps/EventiList";
-
+@import "cmps/eventi-preview";
+@import "cmps/eventi-list";
+@import "cmps/eventi-details";
 @import "cmps/EventiDetails";
-@import "cmps/EventiDetailsCmps";
-@import "cmps/EventiEdit";
-@import "cmps/ReviewList";
+@import "cmps/eventi-detailscopy";
+@import "cmps/eventi-edit";
+@import "cmps/review-list";
 
 // Pages
+@import "views/_home-page";
 @import "views/about";
-@import "views/home-page";
+@import "cmps/Login";
+@import "cmps/Signup";
+@import "cmps/footer";
+@import "cmps/Header";
