@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { CyclesCard } from '../pages/EventiDetailscopy'
+import { CyclesCard } from '../pages/EventiDetailsCmps'
 
-export function CycleList({ cycles }) {
+export function CycleList( {cycles, eventi}) {
     return cycles.map((cycle, idx) => {
-        return <CyclesCard key={idx} cycle={cycle} />
+        return <CyclesCard key={idx} cycle={cycle} eventi={eventi} />
     })
 }
 

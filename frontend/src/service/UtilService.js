@@ -1,7 +1,7 @@
 export const UtilService = {
     makeId,
     getRandomInt,
-    formatTime
+    dateFormatter
 };
 
 function makeId(length = 6) {
@@ -18,22 +18,18 @@ function makeId(length = 6) {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); // Min is inclusive, Max is Exclusive
 }
-function createTime() {
-    var timeNow = new Date();
-    var hours = timeNow.getHours();
-    var minutes = timeNow.getMinutes();
-    var seconds = timeNow.getSeconds();
-    var timeString = "" + ((hours > 12) ? hours - 12 : hours);
-    timeString += ((minutes < 10) ? ":0" : ":") + minutes;
-    timeString += ((seconds < 10) ? ":0" : ":") + seconds;
-    return timeString;
-}
-function formatTime(time) {
-    var hours = time.getHours();
-    var minutes = time.getMinutes();
-    var seconds = time.getSeconds();
-    var timeString = "" + ((hours > 12) ? hours - 12 : hours);
-    timeString += ((minutes < 10) ? ":0" : ":") + minutes;
-    timeString += ((seconds < 10) ? ":0" : ":") + seconds;
-    return timeString;
+function dateFormatter(timeStampStart, timeStampEnd) {
+    const dateFormat = new Date(timeStampStart).toString()
+    const dateEndFormat = new Date(timeStampEnd).toString()
+    const dayName = dateFormat.substring(0, 3)
+    const month = dateFormat.substring(4, 8)
+    const dayNum = dateFormat.substring(8, 10)
+    const time = dateFormat.substring(15, 21)
+    const timeEnd = dateEndFormat.substring(15, 21)
+    return (
+        <section>
+            <h3> {dayName + ', ' + month + dayNum}</h3>
+            <p>{time + ' - ' + timeEnd}</p>
+        </section>
+    )
 }

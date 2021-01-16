@@ -41,16 +41,29 @@
     width: 50px;
     border-radius: 50%;
 }
-******************************************************** .root {
+//********************************************************
+.root {
     display: "flex";
+    margin:auto;
+    .details {
+        display: "flex";
+        flex-direction: "column";
+    }
+    .content {
+        flex: "1 0 auto";
+        span {
+            font-size: 14px;
+        }
+    }
+    button{
+        margin-bottom: 5px;
+        &:hover{
+            cursor: pointer;
+        }
+
+    };
 }
-.details {
-    display: "flex";
-    flex-direction: "column";
-}
-.content {
-    flex: "1 0 auto";
-}
+
 .cover {
     width: 151;
 }
