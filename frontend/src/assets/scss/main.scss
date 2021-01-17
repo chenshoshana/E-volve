@@ -12,7 +12,8 @@
 @import "basics/forms";
 
 // Components
-@import "cmps/Header";
+@import "cmps/header";
+@import "cmps/footer";
 @import "cmps/eventi-preview";
 @import "cmps/eventi-list";
 @import "cmps/eventi-details";
@@ -23,7 +24,6 @@
 
 // Pages
 @import "views/home-page";
-@import "views/about";
-@import "views/home-page";
+@import "views/about-page";
 @import "views/login-page";
 @import "views/signup-page";

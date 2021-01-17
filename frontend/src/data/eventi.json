@@ -3,7 +3,7 @@
         "_id": "sadasd9",
         "title": "soccer",
         "price": 20,
-        "description": "nbdssjadkhjkdfshjkdsfa",
+        "description": "You want hold the ball like Maradona or Ronaldo but don't know how? Whis us you will take some practice and learn it fast! We will have a shortly warm-up training befor we will start. ",
         "tags": [
             "sport"
         ],
@@ -58,7 +58,8 @@
                 ]
             }
         ],
-        "durationMinutes": 30,
+        "durationMinutes": 60,
+        "equipment": "ball",
         "reviews": [
             {
                 "id": "dsfda3243",
@@ -77,7 +78,7 @@
         "_id": "sadasd7",
         "title": "swiming",
         "price": 20,
-        "description": "nbdssjadkhjkdfshjkdsfa",
+        "description": "in our meeting we will learn how to breath and swim simultaneosly, and take it far",
         "tags": [
             "sport"
         ],
@@ -115,6 +116,7 @@
             }
         ],
         "durationMinutes": 30,
+        "equipment": "stopper watch",
         "reviews": [
             {
                 "id": "dsfda3243",
@@ -133,7 +135,7 @@
         "_id": "sadasd5",
         "title": "painting",
         "price": 20,
-        "description": "nbdssjadkhjkdfshjkdsfa",
+        "description": "Dreaming paint like Picasso but no exist? Your place with us! In our workshop we will take you step by step to your best composition!",
         "tags": [
             "artcrafts"
         ],
@@ -171,6 +173,7 @@
             }
         ],
         "durationMinutes": 30,
+        "equipment": "painting block, paints, brushes",
         "reviews": [
             {
                 "id": "dsfda3243",
@@ -189,7 +192,7 @@
         "_id": "sadasd3",
         "title": "yoga",
         "price": 20,
-        "description": "nbdssjadkhjkdfshjkdsfa",
+        "description": "your first yoga lessons",
         "tags": [
             "sport"
         ],
@@ -227,6 +230,7 @@
             }
         ],
         "durationMinutes": 30,
+        "equipment": "training mat, comfortable clothes",
         "reviews": [
             {
                 "id": "dsfda3243",
@@ -245,7 +249,7 @@
         "_id": "sadasd15",
         "title": "cake art",
         "price": 20,
-        "description": "nbdssjadkhjkdfshjklkjhgfa",
+        "description": "take your cake decoration ability to the next level",
         "tags": [
             "baking"
         ],
@@ -282,6 +286,7 @@
             }
         ],
         "durationMinutes": 60,
+        "equipment": "cake decoration set, baked cake, cake cream/chocolate",
         "reviews": [
             {
                 "id": "dsfda3243",
@@ -332,6 +337,7 @@
             }
         ],
         "durationMinutes": 45,
+        "equipment": "high heel shoes",
         "reviews": [
             {
                 "id": "dsfda3243",
@@ -387,6 +393,7 @@
             }
         ],
         "durationMinutes": 120,
+        "equipment": "cuscus pan, vegitables, chicken soup, spieces",
         "reviews": [
             {
                 "id": "dsfda3243",
@@ -441,6 +448,7 @@
             }
         ],
         "durationMinutes": 40,
+        "equipment": "microphone (optionaly)",
         "reviews": [
             {
                 "id": "dsfda3243",
