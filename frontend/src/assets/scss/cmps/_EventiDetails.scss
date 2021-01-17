@@ -14,14 +14,15 @@
     .img-rec-container {
         display: flex;
         flex-direction: column;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     .img-detail-sq {
         width: 350px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     .img-detail-rec {
         width: 180px;
+        
     }
 }
 .border-right {
@@ -49,7 +50,7 @@ span {
     grid-row: 2/3;
     grid-column: 1/-1;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 .gallery > * {
     max-width: 50%;
@@ -66,6 +67,7 @@ span {
     grid-column: 1/-1;
 }
 .main-details {
+    grid-gap:5px;
     grid-row: 3/4;
     grid-column: 1/-2;
 }
